@@ -24,3 +24,19 @@
   object-fit: cover;
   margin-bottom: 1px;
 }
+
+.pagination {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.pagination > span {
+  padding: 15px 20px;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+.pagination > span > span {
+  margin-inline: 0.3rem;
+}

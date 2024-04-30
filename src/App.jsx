@@ -28,6 +28,18 @@ const App = () => {
           })}
         </div>
       )}
+
+      {product.length > 0 && (
+        <div className="pagination">
+          <span>⬅️ </span>{" "}
+          <span>
+            {[...Array(product.length / 10)].map((_, id) => {
+              return <span key={id}>{id + 1}</span>;
+            })}
+          </span>{" "}
+          <span>▶️ </span>
+        </div>
+      )}
     </div>
   );
 };
